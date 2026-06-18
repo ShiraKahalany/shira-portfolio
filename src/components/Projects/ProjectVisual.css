@@ -1,0 +1,122 @@
+.project-visual {
+  position: relative;
+  width: 100%;
+}
+
+.project-visual__halo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 110%;
+  height: 120%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(ellipse, var(--glow-1) 0%, var(--glow-2) 45%, transparent 72%);
+  opacity: 0.24;
+  filter: blur(70px);
+  border-radius: 28px;
+  animation: visualHaloPulse 7s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes visualHaloPulse {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.32; }
+}
+
+.project-visual__frame {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: clamp(300px, 34vw, 420px);
+  padding: 18px;
+  border-radius: 22px;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-elevated);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.03), 0 30px 70px -24px var(--glow-1);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  overflow: hidden;
+}
+
+.project-visual__frame:hover {
+  transform: translateY(-4px);
+  border-color: var(--glow-1);
+}
+
+.project-visual__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.project-visual__frame--placeholder {
+  flex-direction: column;
+  gap: 10px;
+  border-style: dashed;
+  background: var(--glass-bg-soft);
+}
+
+.project-visual__frame--placeholder span {
+  font-size: 38px;
+  font-weight: 700;
+  background: linear-gradient(120deg, var(--glow-1), var(--glow-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.project-visual__frame--placeholder p {
+  font-size: 12.5px;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.project-visual__gallery {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.project-visual__thumb {
+  flex: 1;
+  height: 92px;
+  border-radius: 12px;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-elevated);
+  overflow: hidden;
+  box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.45);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-visual__thumb:hover {
+  transform: translateY(-3px);
+  border-color: var(--glow-2);
+}
+
+.project-visual__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 720px) {
+  .project-visual__frame {
+    height: 260px;
+    padding: 12px;
+  }
+
+  .project-visual__gallery {
+    flex-wrap: wrap;
+  }
+
+  .project-visual__thumb {
+    flex: 1 1 calc(50% - 7px);
+    height: 80px;
+  }
+}

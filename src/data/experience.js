@@ -1,7 +1,7 @@
 export const experience = {
   company: 'Elta Systems',
   role: 'Software Engineer',
-  period: '2024 — 2025',
+  period: '2024 - 2025',
   summary: 'Worked on real-time and distributed systems in a defense technology environment.',
   highlights: [
     'Developed a real-time chat module with live map object sharing.',

@@ -26,7 +26,7 @@ export default function About() {
             </p>
             <p>
               I enjoy building systems that combine strong engineering foundations with
-              real-world product thinking — from backend services and real-time systems to
+              real-world product thinking - from backend services and real-time systems to
               AI-powered applications.
             </p>
             <p>

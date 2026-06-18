@@ -1,14 +1,14 @@
 :root {
-  --bg-base: #0a0e1a;
-  --bg-soft: #0f1424;
-  --bg-elevated: #131a2e;
-  --text: #e2e8f0;
-  --text-dim: #94a3b8;
-  --text-faint: #64748b;
-  --border: rgba(148, 163, 184, 0.14);
-  --border-strong: rgba(148, 163, 184, 0.28);
-  --glass-bg: rgba(20, 26, 46, 0.55);
-  --glass-bg-soft: rgba(20, 26, 46, 0.35);
+  --bg-base: #131c30;
+  --bg-soft: #1a2540;
+  --bg-elevated: #22304e;
+  --text: #f3f6fb;
+  --text-dim: #bcc7da;
+  --text-faint: #8d9ab0;
+  --border: rgba(214, 224, 245, 0.12);
+  --border-strong: rgba(214, 224, 245, 0.24);
+  --glass-bg: rgba(40, 53, 82, 0.55);
+  --glass-bg-soft: rgba(40, 53, 82, 0.32);
 
   --teal: #2dd4bf;
   --cyan: #22d3ee;
@@ -16,6 +16,8 @@
   --orange: #f97316;
   --indigo: #6366f1;
   --pink: #ec4899;
+  --rose-gold: #e8b4a0;
+  --soft-blue: #5b8def;
 
   --accent: var(--teal);
   --accent-2: var(--cyan);
@@ -46,7 +48,9 @@ body {
   margin: 0;
   min-height: 100vh;
   color: var(--text);
-  background: radial-gradient(ellipse 90% 60% at 50% -10%, #18213d 0%, var(--bg-base) 55%),
+  background: radial-gradient(60% 50% at 12% -8%, rgba(91, 141, 239, 0.22), transparent 62%),
+    radial-gradient(55% 45% at 92% 2%, rgba(232, 180, 160, 0.16), transparent 65%),
+    radial-gradient(70% 60% at 50% 100%, rgba(45, 212, 191, 0.07), transparent 70%),
     linear-gradient(180deg, var(--bg-base) 0%, var(--bg-soft) 100%);
   overflow-x: hidden;
 }

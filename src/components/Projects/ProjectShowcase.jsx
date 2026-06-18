@@ -1,6 +1,6 @@
 import { GithubIcon } from '../BrandIcons'
 import Reveal from '../Reveal'
-import ProjectEcosystem from './ProjectEcosystem'
+import ProjectVisual from './ProjectVisual'
 import { projects } from '../../data/projects'
 import './ProjectShowcase.css'
 
@@ -23,7 +23,7 @@ export default function ProjectShowcase() {
               className={`projects__row ${i % 2 === 1 ? 'projects__row--reverse' : ''}`}
             >
               <div className="projects__visual">
-                <ProjectEcosystem project={project} index={i} />
+                <ProjectVisual project={project} />
               </div>
 
               <div className="projects__info">

@@ -23,7 +23,7 @@ export const projects = [
     tech: ['React', 'TypeScript', 'Node.js', 'Express', 'OpenAI', 'Supabase', 'PostgreSQL'],
     glow: { primary: '#2dd4bf', secondary: '#22d3ee' },
     main: img('HireWise', 'score.png'),
-    orbit: [img('HireWise', 'inteview questions.png'), img('HireWise', 'enter url.png')],
+    gallery: [img('HireWise', 'inteview questions.png'), img('HireWise', 'enter url.png')],
     github: GITHUB_URL,
   },
   {
@@ -35,7 +35,7 @@ export const projects = [
     tech: ['React', 'Node.js', 'Socket.IO', 'JavaScript', 'Keycloak', 'WebSockets'],
     glow: { primary: '#10b981', secondary: '#2563eb' },
     main: img('Chat Map', 'drag & drop.png'),
-    orbit: [img('Chat Map', 'entity details.png'), img('Chat Map', 'double click on entity.png')],
+    gallery: [img('Chat Map', 'entity details.png'), img('Chat Map', 'double click on entity.png')],
     github: GITHUB_URL,
   },
   {
@@ -47,7 +47,7 @@ export const projects = [
     tech: ['C#', '.NET', 'RabbitMQ', 'RTI DDS', 'Distributed Systems', 'Message Mapping'],
     glow: { primary: '#3b82f6', secondary: '#f97316' },
     main: img('DDSRabbitMQ', 'dds to rabbitmq.png'),
-    orbit: [],
+    gallery: [],
     github: GITHUB_URL,
   },
   {
@@ -59,7 +59,7 @@ export const projects = [
     tech: ['Python', 'OpenAI', 'GitHub', 'Automation', 'LLMs'],
     glow: { primary: '#a855f7', secondary: '#6366f1' },
     main: img('README Agent', 'processing.png'),
-    orbit: [img('README Agent', 'before.png'), img('README Agent', 'after.png')],
+    gallery: [img('README Agent', 'before.png'), img('README Agent', 'after.png')],
     github: GITHUB_URL,
   },
   {
@@ -69,9 +69,9 @@ export const projects = [
     description:
       'Modular desktop application for home decor product and order management, built with a clean 3-layer architecture and XML-based persistence.',
     tech: ['C#', '.NET', 'WPF', 'Entity Framework', 'XML', '3-Layer Architecture'],
-    glow: { primary: '#f59e0b', secondary: '#fb923c' },
+    glow: { primary: '#f5b342', secondary: '#d97706' },
     main: null,
-    orbit: [],
+    gallery: [],
     github: GITHUB_URL,
   },
   {
@@ -81,9 +81,9 @@ export const projects = [
     description:
       'A LinkedIn-style platform concept for influencers and brands, helping creators build professional profiles and helping businesses discover relevant creators for campaigns.',
     tech: ['React', 'Node.js', 'PostgreSQL', 'Product Design', 'SaaS'],
-    glow: { primary: '#ec4899', secondary: '#8b5cf6' },
+    glow: { primary: '#ec4899', secondary: '#fb7185' },
     main: null,
-    orbit: [],
+    gallery: [],
     github: GITHUB_URL,
   },
 ]
