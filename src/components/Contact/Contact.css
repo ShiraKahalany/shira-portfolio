@@ -1,0 +1,48 @@
+.contact__card {
+  position: relative;
+  padding: 70px 40px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contact__glow {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 520px;
+  height: 320px;
+  background: radial-gradient(ellipse, rgba(45, 212, 191, 0.25), transparent 70%);
+  filter: blur(50px);
+  pointer-events: none;
+}
+
+.contact__title {
+  position: relative;
+  font-size: clamp(28px, 4vw, 40px);
+  margin-bottom: 16px;
+  z-index: 1;
+}
+
+.contact__text {
+  position: relative;
+  max-width: 520px;
+  margin: 0 auto 32px;
+  font-size: 16.5px;
+  z-index: 1;
+}
+
+.contact__actions {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .contact__card {
+    padding: 48px 24px;
+  }
+}
