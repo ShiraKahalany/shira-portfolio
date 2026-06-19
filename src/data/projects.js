@@ -86,11 +86,11 @@ export const projects = [
     github: GITHUB_URL,
   },
   {
-    id: 'homedecor',
-    title: 'HomeDecor Store',
+    id: 'golden-home',
+    title: 'Golden Home',
     subtitle: 'Desktop E-Commerce Management System',
     description:
-      'HomeDecor Store is a modular desktop application for home decor product and order management, built with C#, .NET, WPF and Entity Framework. The system uses a clean 3-layer architecture and supports product browsing, cart operations, order tracking, manager access, and XML-based persistence.',
+      'Golden Home is a modular desktop application for home decor product and order management, built with C#, .NET, WPF and Entity Framework. The system uses a clean 3-layer architecture and supports product browsing, cart operations, order tracking, manager access, and XML-based persistence.',
     tech: ['C#', '.NET', 'WPF', 'Entity Framework', 'XML', '3-Layer Architecture'],
     glow: { primary: '#f5b342', secondary: '#d97706' },
     images: [
