@@ -1,0 +1,101 @@
+.carousel-frame {
+  position: relative;
+  z-index: 1;
+  height: clamp(300px, 34vw, 420px);
+  padding: 18px;
+  border-radius: 22px;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-elevated);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.03), 0 30px 70px -24px var(--glow-1);
+  transition: border-color 0.35s ease;
+  overflow: hidden;
+}
+
+.carousel-frame:hover {
+  border-color: var(--glow-1);
+}
+
+.carousel-frame__viewport {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-frame__viewport img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.carousel-frame__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: rgba(15, 22, 38, 0.6);
+  color: var(--text);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.carousel-frame__arrow:hover {
+  background: rgba(15, 22, 38, 0.85);
+  border-color: var(--glow-2);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.carousel-frame__arrow:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.carousel-frame__arrow--prev {
+  left: 14px;
+}
+
+.carousel-frame__arrow--next {
+  right: 14px;
+}
+
+.carousel-dots {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.carousel-dots__dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: var(--border-strong);
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.carousel-dots__dot--active {
+  background: var(--glow-1);
+  box-shadow: 0 0 8px var(--glow-1);
+  transform: scale(1.3);
+}
+
+@media (max-width: 720px) {
+  .carousel-frame {
+    height: 280px;
+    padding: 12px;
+  }
+}
