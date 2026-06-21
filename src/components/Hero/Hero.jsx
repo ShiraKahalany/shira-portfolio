@@ -58,12 +58,6 @@ export default function Hero() {
           <a href="#projects" className="btn btn-primary">
             View Projects <ArrowRight size={16} />
           </a>
-          <a href={GITHUB_URL} target="_blank" rel="noreferrer" className="btn btn-ghost">
-            <GithubIcon size={16} /> GitHub
-          </a>
-          <a href={LINKEDIN_URL} target="_blank" rel="noreferrer" className="btn btn-ghost">
-            <LinkedinIcon size={16} /> LinkedIn
-          </a>
           <a href={`mailto:${EMAIL}`} className="btn btn-ghost">
             <Mail size={16} /> Contact
           </a>
