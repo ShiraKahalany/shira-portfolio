@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { Mail, ArrowRight } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from '../BrandIcons'
-import { GITHUB_URL, LINKEDIN_URL, EMAIL } from '../../data/projects'
+import { GITHUB_URL, LINKEDIN_URL } from '../../data/projects'
 import './Hero.css'
 
 export default function Hero() {
@@ -58,7 +58,7 @@ export default function Hero() {
           <a href="#projects" className="btn btn-primary">
             View Projects <ArrowRight size={16} />
           </a>
-          <a href={`mailto:${EMAIL}`} className="btn btn-ghost">
+          <a href="#contact" className="btn btn-ghost">
             <Mail size={16} /> Contact
           </a>
         </motion.div>
