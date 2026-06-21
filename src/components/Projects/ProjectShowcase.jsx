@@ -1,3 +1,4 @@
+import { CheckCircle2 } from 'lucide-react'
 import { GithubIcon } from '../BrandIcons'
 import Reveal from '../Reveal'
 import ProjectVisual from './ProjectVisual'
@@ -27,11 +28,27 @@ export default function ProjectShowcase() {
               </div>
 
               <div className="projects__info">
+                {project.badge && <span className="projects__badge">{project.badge}</span>}
+
                 <h3 className="projects__title" style={{ '--dot-color': project.glow.primary }}>
                   {project.title}
+                  {project.emoji && (
+                    <span className="projects__title-emoji">{project.emoji}</span>
+                  )}
                 </h3>
                 <p className="projects__subtitle">{project.subtitle}</p>
                 <p className="projects__desc">{project.description}</p>
+
+                {project.achievements && (
+                  <ul className="projects__achievements">
+                    {project.achievements.map((achievement) => (
+                      <li key={achievement}>
+                        <CheckCircle2 size={16} />
+                        <span>{achievement}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
 
                 <div className="projects__tech">
                   {project.tech.map((t) => (
