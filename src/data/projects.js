@@ -10,8 +10,10 @@ function img(folder, filename) {
 }
 
 export const GITHUB_URL = 'https://github.com/ShiraKahalany'
-export const LINKEDIN_URL = 'https://www.linkedin.com/'
+export const LINKEDIN_URL = 'https://www.linkedin.com/in/shira-kahalany-a83995268'
 export const EMAIL = 'shira.ka017@gmail.com'
+export const PHONE_DISPLAY = '050-6844776'
+export const PHONE_HREF = 'tel:+972506844776'
 
 export const projects = [
   {

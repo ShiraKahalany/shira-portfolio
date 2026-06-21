@@ -1,8 +1,41 @@
-import { Mail } from 'lucide-react'
+import { Mail, Phone, ArrowUpRight } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from '../BrandIcons'
 import Reveal from '../Reveal'
-import { GITHUB_URL, LINKEDIN_URL, EMAIL } from '../../data/projects'
+import { GITHUB_URL, LINKEDIN_URL, EMAIL, PHONE_DISPLAY, PHONE_HREF } from '../../data/projects'
 import './Contact.css'
+
+const CONTACT_METHODS = [
+  {
+    id: 'linkedin',
+    icon: LinkedinIcon,
+    label: 'LinkedIn',
+    value: 'Shira Kahalany',
+    href: LINKEDIN_URL,
+    external: true,
+  },
+  {
+    id: 'email',
+    icon: Mail,
+    label: 'Email',
+    value: EMAIL,
+    href: `mailto:${EMAIL}`,
+  },
+  {
+    id: 'phone',
+    icon: Phone,
+    label: 'Phone',
+    value: PHONE_DISPLAY,
+    href: PHONE_HREF,
+  },
+  {
+    id: 'github',
+    icon: GithubIcon,
+    label: 'GitHub',
+    value: 'ShiraKahalany',
+    href: GITHUB_URL,
+    external: true,
+  },
+]
 
 export default function Contact() {
   return (
@@ -15,16 +48,29 @@ export default function Contact() {
             I am currently looking for software engineering opportunities in backend, full
             stack, AI, and real-time systems.
           </p>
-          <div className="contact__actions">
-            <a href={`mailto:${EMAIL}`} className="btn btn-primary">
-              <Mail size={16} /> Email me
-            </a>
-            <a href={GITHUB_URL} target="_blank" rel="noreferrer" className="btn btn-ghost">
-              <GithubIcon size={16} /> GitHub
-            </a>
-            <a href={LINKEDIN_URL} target="_blank" rel="noreferrer" className="btn btn-ghost">
-              <LinkedinIcon size={16} /> LinkedIn
-            </a>
+          <p className="contact__cta-line">
+            Interested in working together? Feel free to reach out.
+          </p>
+
+          <div className="contact__grid">
+            {CONTACT_METHODS.map((method) => (
+              <a
+                key={method.id}
+                href={method.href}
+                target={method.external ? '_blank' : undefined}
+                rel={method.external ? 'noreferrer' : undefined}
+                className="contact__method"
+              >
+                <span className="contact__method-icon">
+                  <method.icon size={20} />
+                </span>
+                <span className="contact__method-text">
+                  <span className="contact__method-label">{method.label}</span>
+                  <span className="contact__method-value">{method.value}</span>
+                </span>
+                <ArrowUpRight size={16} className="contact__method-arrow" />
+              </a>
+            ))}
           </div>
         </Reveal>
       </div>
