@@ -44,9 +44,10 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          B.Sc. Software &amp; Communications Engineering graduate specializing in AI and Data
-          Science, with hands-on experience developing production systems, real-time
-          communication platforms, distributed architecture, and AI-powered applications.
+          B.Sc. Software &amp; Communications Engineering graduate with a GPA of 90, specializing
+          in AI and Data Science, with hands-on experience developing production systems,
+          real-time communication platforms, distributed architectures, and AI-powered
+          applications.
         </motion.p>
 
         <motion.div
