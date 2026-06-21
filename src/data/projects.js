@@ -23,7 +23,7 @@ export const projects = [
     description:
       'AI-powered interview preparation platform that analyzes job descriptions and generates personalized technical and behavioral interview simulations with AI feedback and readiness scoring.',
     tech: ['React', 'TypeScript', 'Node.js', 'Express', 'OpenAI', 'Supabase', 'PostgreSQL'],
-    glow: { primary: '#2dd4bf', secondary: '#22d3ee' },
+    glow: { primary: '#10b981', secondary: '#14b8a6' },
     images: [
       img('HireWise', 'enter url.png'),
       img('HireWise', 'inteview questions.png'),
@@ -38,9 +38,9 @@ export const projects = [
     badge: 'Hackathon Winner',
     emoji: '🏆',
     description:
-      'RoadEye is an AI-powered traffic violation analysis system developed during a university hackathon and awarded 1st place. The system helps traffic safety organizations process citizen-submitted dashcam videos automatically — extracting key frames, detecting vehicles, identifying license plates using OCR, recognizing vehicle color, and validating results against Ministry of Transport records. The platform reduces investigation time from several minutes per case to only a few seconds while improving accuracy and consistency.',
+      'RoadEye is an AI-powered traffic violation analysis system developed during a university hackathon and awarded 1st place. The system helps traffic safety organizations process citizen-submitted dashcam videos automatically - extracting key frames, detecting vehicles, identifying license plates using OCR, recognizing vehicle color, and validating results against Ministry of Transport records. The platform reduces investigation time from several minutes per case to only a few seconds while improving accuracy and consistency.',
     achievements: [
-      '1st Place Winner – Hackathon at Machon Tal',
+      'Selected for further development by "Shomrei Haderech"',
       'Presented live to judges and industry mentors',
       'Built end-to-end prototype during the competition',
     ],
@@ -55,7 +55,7 @@ export const projects = [
       'Flask',
       'REST API',
     ],
-    glow: { primary: '#60a5fa', secondary: '#22d3ee' },
+    glow: { primary: '#3b82f6', secondary: '#60a5fa' },
     images: [
       img('RoadEye', 'RoadEye system.png'),
       img('RoadEye', 'winner photo.png'),
@@ -71,7 +71,7 @@ export const projects = [
     description:
       'LexMeUp is an English vocabulary learning platform focused on helping users improve their vocabulary through personalized daily lessons, progress tracking, and review sessions. The platform is designed to support structured learning, smart repetition, and topic-based vocabulary growth.',
     tech: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Supabase', 'OpenAI', 'AI Learning Flow'],
-    glow: { primary: '#2dd4bf', secondary: '#5b8def' },
+    glow: { primary: '#8b5cf6', secondary: '#a78bfa' },
     images: [
       img('LexMeUp', 'home page.png'),
       img('LexMeUp', 'dalily lesson.png'),
@@ -86,7 +86,7 @@ export const projects = [
     description:
       'A real-time communication system developed at Elta Systems, combining team chat with an operational map. Users can send messages, share map entities, drag entities into chat, and track selected entities on their own map view.',
     tech: ['React', 'Node.js', 'Socket.IO', 'JavaScript', 'Keycloak', 'WebSockets'],
-    glow: { primary: '#10b981', secondary: '#2563eb' },
+    glow: { primary: '#06b6d4', secondary: '#22d3ee' },
     images: [
       img('Chat Map', 'double click on entity.png'),
       img('Chat Map', 'drag & drop.png'),
@@ -101,7 +101,7 @@ export const projects = [
     description:
       'C# .NET middleware gateway that translated DDS messages into RabbitMQ events, enabling communication between distributed systems and downstream services.',
     tech: ['C#', '.NET', 'RabbitMQ', 'RTI DDS', 'Distributed Systems', 'Message Mapping'],
-    glow: { primary: '#3b82f6', secondary: '#f97316' },
+    glow: { primary: '#f59e0b', secondary: '#fb923c' },
     images: [img('DDSRabbitMQ', 'dds to rabbitmq.png')],
     github: GITHUB_URL,
   },
@@ -112,7 +112,7 @@ export const projects = [
     description:
       'AI agent that analyzes GitHub repositories, understands project structure, and generates professional README files automatically.',
     tech: ['Python', 'OpenAI', 'GitHub', 'Automation', 'LLMs'],
-    glow: { primary: '#a855f7', secondary: '#6366f1' },
+    glow: { primary: '#ec4899', secondary: '#f472b6' },
     images: [
       img('README Agent', 'before.png'),
       img('README Agent', 'processing.png'),
@@ -127,7 +127,7 @@ export const projects = [
     description:
       'Golden Home is a modular desktop application for home decor product and order management, built with C#, .NET, WPF and Entity Framework. The system uses a clean 3-layer architecture and supports product browsing, cart operations, order tracking, manager access, and XML-based persistence.',
     tech: ['C#', '.NET', 'WPF', 'Entity Framework', 'XML', '3-Layer Architecture'],
-    glow: { primary: '#f5b342', secondary: '#d97706' },
+    glow: { primary: '#eab308', secondary: '#facc15' },
     images: [
       img('Home Decor  Store', 'מסך בית.png'),
       img('Home Decor  Store', 'קטגוריות -אופציות.png'),
