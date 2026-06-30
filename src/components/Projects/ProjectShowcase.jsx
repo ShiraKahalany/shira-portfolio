@@ -13,7 +13,7 @@ export default function ProjectShowcase() {
           <span className="eyebrow">Featured Projects</span>
           <h2 className="section-title">Things I've built</h2>
           <p className="section-sub">
-            A selection of production systems, AI tools, and independent products.
+            A selection of production systems, AI tools, and engineering challenges.
           </p>
         </Reveal>
 

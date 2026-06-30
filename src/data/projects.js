@@ -65,21 +65,6 @@ export const projects = [
     github: GITHUB_URL,
   },
   {
-    id: 'lexmeup',
-    title: 'LexMeUp',
-    subtitle: 'Personalized English Vocabulary Learning Platform',
-    description:
-      'LexMeUp is an English vocabulary learning platform focused on helping users improve their vocabulary through personalized daily lessons, progress tracking, and review sessions. The platform is designed to support structured learning, smart repetition, and topic-based vocabulary growth.',
-    tech: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Supabase', 'OpenAI', 'AI Learning Flow'],
-    glow: { primary: '#8b5cf6', secondary: '#a78bfa' },
-    images: [
-      img('LexMeUp', 'home page.png'),
-      img('LexMeUp', 'dalily lesson.png'),
-      img('LexMeUp', 'progress review.png'),
-    ],
-    github: GITHUB_URL,
-  },
-  {
     id: 'chat-map',
     title: 'Real-Time Chat Map System',
     subtitle: 'Operational collaboration with live map entity sharing',
