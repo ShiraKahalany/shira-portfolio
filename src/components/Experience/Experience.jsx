@@ -8,8 +8,7 @@ export default function Experience() {
     <section id="experience" className="section experience">
       <div className="container">
         <Reveal className="section-head">
-          <span className="eyebrow">Experience</span>
-          <h2 className="section-title">Where I've built</h2>
+          <h2 className="section-title">Experience</h2>
         </Reveal>
 
         <Reveal className="experience__card glass">
